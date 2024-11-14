@@ -1,4 +1,3 @@
-from views.main_view import main_menu
+from models.database import Database
 
-if __name__ == "__main__":
-    main_menu()
+print(Database.test())

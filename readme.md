@@ -1,4 +1,5 @@
 plm_app/
+├── __init__.py 
 ├── main.py                # Point d'entrée de l'application
 ├── config/
 │   └── config.py          # Fichier de configuration (paramètres, variables d'environnement)
