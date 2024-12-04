@@ -1,5 +1,4 @@
 TO DO:
-1-	Les Produits
 a.	Liste des produits
 -	Parfum Nuit Sauvage 
 -	Parfum Fleur d’Ombre 
@@ -32,6 +31,7 @@ c.	Les commandes
 -	Supprimer note/avis (9)
 -	Consulter l’historique des ventes (10)
 -	 …
+
 d.	Les diff access
 -	Admin 1-2-3-4-5-9-10
 -	Fournisseur 4-6-7
