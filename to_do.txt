@@ -1,15 +1,15 @@
 TO DO:
 a.	Liste des produits
--	Parfum Nuit Sauvage 
--	Parfum Fleur d’Ombre 
--	Parfum Brise Ardente 
--	Parfum Ciel Serein 
--	Parfum Rouge Sillage
+-	Parfum Nuit Sauvage (bouteille)
+-	Parfum Fleur d’Ombre (bouteille)
+-	Parfum Brise Ardente (bouteille)
+-	Parfum Ciel Serein (flacon)
+-	Parfum Rouge Sillage (flacon)
 
 b.	Les caractéristiques 
 -	Nom
 -	Description
--	Catégorie
+-	Catégorie (bouteille ou flacon)
 -	Ingredients
 -	Stocks
 -	Prix
@@ -27,15 +27,18 @@ c.	Les commandes
 -	Changer prix (5)
 -	Changer ingrédients (6)
 -	Changer taille (7)
--	Ajouter note/Avis (8)
--	Supprimer note/avis (9)
--	Consulter l’historique des ventes (10)
+-   Changer catégorie (8)
+-	Ajouter note/Avis (9)
+-	Supprimer note/avis (10)
+-	Consulter l’historique des ventes (11)
 -	 …
 
 d.	Les diff access
--	Admin 1-2-3-4-5-9-10
--	Fournisseur 4-6-7
--	Client 1-8
+-	Admin 1-2-3-4-5-10-11
+-	Equipe packaging 7-8-11
+-   Equipe conception 6-11
+-   Equipe buisness/marketing 3-4-10-11
+-	Client 1-9
 -	…
  
 e.	Les diff affichages
