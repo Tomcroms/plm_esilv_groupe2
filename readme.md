@@ -6,6 +6,7 @@ plm_app/
 ├── models/
 │   ├── product.py         # Gestion des données de produit
 │   ├── lifecycle.py       # Gestion des étapes de cycle de vie
+│   ├── lifecycle.py 
 │   └── database.py        # Interface avec la base de données (e.g., SQLAlchemy)
 ├── controllers/
 │   ├── product_controller.py   # Contrôleur pour la gestion de produit
