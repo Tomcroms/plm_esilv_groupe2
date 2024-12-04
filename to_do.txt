@@ -1,0 +1,51 @@
+TO DO:
+1-	Les Produits
+a.	Liste des produits
+-	Parfum Nuit Sauvage 
+-	Parfum Fleur d’Ombre 
+-	Parfum Brise Ardente 
+-	Parfum Ciel Serein 
+-	Parfum Rouge Sillage
+
+b.	Les caractéristiques 
+-	Nom
+-	Description
+-	Catégorie
+-	Ingredients
+-	Stocks
+-	Prix
+-	Fournisseur
+-	Nombre article vendus (pas visible pr les clients)
+-	Taille (cl)
+-	Notes/avis
+-	…
+
+c.	Les commandes
+-	Acheter (1)
+-	Ajouter/Retirer/Modifier droits d’accès (2)
+-	Ajouter/Retirer Parfum (3)
+-	Changer stock (4)
+-	Changer prix (5)
+-	Changer ingrédients (6)
+-	Changer taille (7)
+-	Ajouter note/Avis (8)
+-	Supprimer note/avis (9)
+-	Consulter l’historique des ventes (10)
+-	 …
+d.	Les diff access
+-	Admin 1-2-3-4-5-9-10
+-	Fournisseur 4-6-7
+-	Client 1-8
+-	…
+ 
+e.	Les diff affichages
+-	Page de connexion
+-	Page de creation de compte
+-	Page de gestion des compte (par l’admin)
+-	Accueil avec les diff produits
+-	Page pour chaque produit (tout sauf nombre articles vendus)
+-	Page panier (pourquoi pas)
+-	Page ajout nouveau produit/ modif
+-	
+
+
