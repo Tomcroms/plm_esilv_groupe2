@@ -51,4 +51,5 @@ e.	Les diff affichages
 -	Page ajout nouveau produit/ modif
 -	
 
-
+profil a rajouter: concepteur, vue visiteur, fournisseur
+ajouter les prises de versions. propagation etc. les concepteurs peuvent modifier les verisons
