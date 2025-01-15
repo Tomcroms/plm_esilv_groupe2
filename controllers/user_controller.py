@@ -14,10 +14,12 @@ class UserController:
         # Vérifier le rôle et le code
         if role == 'admin' and code != 'admin':
             return False, "Code incorrect pour créer un compte administrateur."
-        elif role == 'user' and code != '12345':
-            return False, "Code incorrect pour créer un compte utilisateur."
-        elif role == 'client' and code:
-            return False, "Aucun code requis pour créer un compte client."
+        elif role == 'concepteur' and code != 'concepteur':
+            return False, "Code incorrect pour créer un compte concepteur."
+        elif role == 'fournisseur' and code != 'fournisseur':
+            return False, "Code incorrect pour créer un compte fournisseur."
+        elif role == 'visiteur' and code:
+            return False, "Aucun code requis pour créer un compte visiteur."
 
         # Créer l'utilisateur
         user = User(username, password, role)

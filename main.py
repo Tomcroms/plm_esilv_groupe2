@@ -1,4 +1,3 @@
-# main.py
 import tkinter as tk
 from views.login_view import LoginView
 from views.main_view import MainView

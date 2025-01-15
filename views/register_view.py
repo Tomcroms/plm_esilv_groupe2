@@ -25,8 +25,8 @@ class RegisterView:
 
         tk.Label(self.root, text="Rôle").pack()
         self.role_var = tk.StringVar()
-        self.role_var.set("client")  # Valeur par défaut
-        roles = ["admin", "user", "client"]
+        self.role_var.set("visiteur")  # Valeur par défaut (visiteur)
+        roles = ["admin", "concepteur", "fournisseur", "visiteur"]
         self.role_menu = tk.OptionMenu(self.root, self.role_var, *roles)
         self.role_menu.pack()
 
@@ -43,6 +43,7 @@ class RegisterView:
         role = self.role_var.get()
         code = self.code_entry.get()
 
+        # Appel de la méthode pour enregistrer l'utilisateur
         success, message = self.controller.register_user(username, password, role, code)
         if success:
             messagebox.showinfo("Succès", message)
