@@ -69,7 +69,7 @@ class ProductView(tk.Frame):
             self.tree.column(col, width=110)
 
         self.tree.pack(fill=tk.BOTH, expand=True)
-
+        self.tree.tag_configure("fixed_height", height=100)
         # Bouton de création si rôle admin ou concepteur
         if self.user_role in ["admin", "concepteur"]:
             create_btn = tk.Button(self, text="Créer un Produit", command=self.open_create_product_window)
@@ -129,7 +129,8 @@ class ProductView(tk.Frame):
                     subp_str,
                     concepteur_str,
                     "Modifier"
-                )
+                ),
+                tags=("fixed_height",)  # Appliquer le tag de hauteur fixe
             )
 
     def on_double_click(self, event):
