@@ -7,7 +7,7 @@ from views.register_view import RegisterView
 class App:
     def __init__(self, root):
         self.root = root
-        self.root.geometry("400x600")  # Définir la taille de la fenêtre
+        self.root.geometry("600x800")  # Définir la taille de la fenêtre
         self.show_login_view()
 
     def show_login_view(self):
