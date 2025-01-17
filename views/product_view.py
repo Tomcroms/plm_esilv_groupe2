@@ -69,7 +69,6 @@ class ProductView(tk.Frame):
             self.tree.column(col, width=110)
 
         self.tree.pack(fill=tk.BOTH, expand=True)
-        self.tree.tag_configure("fixed_height", height=100)
         # Bouton de création si rôle admin ou concepteur
         if self.user_role in ["admin", "concepteur"]:
             create_btn = tk.Button(self, text="Créer un Produit", command=self.open_create_product_window)
@@ -94,7 +93,7 @@ class ProductView(tk.Frame):
             if os.path.isfile(image_path):
                 try:
                     pil_img = Image.open(image_path)
-                    pil_img.thumbnail((50, 50))  # on réduit la taille
+                    pil_img = pil_img.resize((100, 100), Image.LANCZOS)  # Redimensionne à 100x100 pixels
                     tk_photo = ImageTk.PhotoImage(pil_img)
                     # On stocke la référence dans un dict pour éviter le garbage collector
                     self.images_cache[p._id] = tk_photo
@@ -130,7 +129,6 @@ class ProductView(tk.Frame):
                     concepteur_str,
                     "Modifier"
                 ),
-                tags=("fixed_height",)  # Appliquer le tag de hauteur fixe
             )
 
     def on_double_click(self, event):
